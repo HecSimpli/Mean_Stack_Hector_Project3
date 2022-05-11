@@ -7,14 +7,26 @@ import { ChatService } from 'src/app/services/chat.service';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent implements OnInit {
-
   text: string = "";
 
-  constructor(public chat: ChatService) { }
 
+
+
+
+  constructor(public chat: ChatService) { }
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
+  //
+
+
+  post() {
+    console.log('post ok', this.text);
+
+  }
+
+  //
   sendMessage() {
     let messageInfo = {
       text: this.text,

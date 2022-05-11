@@ -4,6 +4,8 @@
 </div>
 <div class="inputcontainer">
   <form (submit)="sendMessage()">
-    <input [(ngModel)]="text" [ngModelOptions]="{standalone:true}" type="text">
+    <input [(ngModel)]="text" [ngModelOptions]="{standalone:true}" placeholder="Message Body" type="text">
+    <button (click)="post()">Post</button>
   </form>
+
 </div>
