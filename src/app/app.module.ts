@@ -9,11 +9,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ChatService } from './services/chat.service';
 
-// import { Injectable } from '@angular/core';
-
-//         @Injectable({
-//           providedIn: [ChatService]
-//         })
 
 @NgModule({
   declarations: [
